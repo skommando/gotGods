@@ -26,7 +26,7 @@ SECRET_KEY = ')791g7&d3bbelqj7=gn2od9k_7g6bfjcg9$)k%t+jp$i4$wvdn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.60.20.144', '10.81.105.1']
+ALLOWED_HOSTS = ['got.amm907.com', '10.60.20.144', '10.81.105.1']
 
 
 # Application definition
@@ -73,11 +73,11 @@ WSGI_APPLICATION = 'gotGods.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
+# uwsgi 启动报数据库版本过低，先注掉。
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
