@@ -1,6 +1,8 @@
+<html>
 <style>
 table,
 td {
+    margin:auto;
     border: 0.1px  rgb(143, 143, 143);
     text-align: center;
     table-layout:fixed;
@@ -20,8 +22,16 @@ tfoot {
 .th {
     font-weight: bold;
 }
+
+body {
+    background-image:url('/static/bg1.jpg');
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
 </style>
 <title>GOT 车神名录</title>
+
+<body>
 {% if latest_stats_list %}
     <table>
         <thead>
@@ -75,5 +85,6 @@ tfoot {
 {% else %}
     <p>No stats are available.</p>
 {% endif %}
-
+</body>
+</html>
 
