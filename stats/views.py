@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 
 users = [
+    r"闲闲小可爱",
     r"基拉的左轮",
     r"云天挽歌",
     r"我爱两仪式",
